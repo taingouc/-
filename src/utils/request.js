@@ -5,6 +5,7 @@ import router from '@/router'
 
 // 导出基准地址，原因：将来有些地方不是通过axios发请求的地方用上基准地址
 export const baseURL = 'http://pcapi-xiaotuxian-front-devtest.itheima.net/'
+// export const baseURL = 'https://apipc-xiaotuxian-front.itheima.net/'
 
 const instance = axios.create({
   // axios的一些配置，baseURL、timeout
@@ -20,7 +21,6 @@ instance.interceptors.request.use(
     // 如果本地有token就在头部携带
     // 1. 获取用户信息对象
     const { profile } = store.state.user
-    console.log(profile.token)
     // 2. 判断是否有token
     if (profile.token) {
       // 3. 设置token
