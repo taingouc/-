@@ -74,6 +74,7 @@ export default {
   &.open {
     height: 132px;
     opacity: 1;
+    z-index: 99;
   }
   width: 1240px;
   background-color: #fff;
