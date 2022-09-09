@@ -26,6 +26,9 @@ export const useLazyData = (apiFn) => {
           result.value = data.result
         })
       }
+    },
+    {
+      threshold: 0
     }
   )
   // 将进入可视区域获取的数据返回,
