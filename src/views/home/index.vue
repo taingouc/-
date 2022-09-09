@@ -12,7 +12,9 @@
     <!-- 新鲜好物 -->
     <HomeNew></HomeNew>
     <!-- 人气推荐 -->
-    <HomeHot />
+    <HomeHot></HomeHot>
+    <!-- 热门品牌 -->
+    <HomeBrand></HomeBrand>
   </div>
 </template>
 
@@ -21,13 +23,15 @@ import HomeCategory from './components/home-category'
 import HomeBanner from './components/home-banner'
 import HomeNew from './components/home-new'
 import HomeHot from './components/home-hot'
+import HomeBrand from './components/home-brand'
 export default {
   name: 'Home',
   components: {
     HomeCategory,
     HomeBanner,
     HomeNew,
-    HomeHot
+    HomeHot,
+    HomeBrand
   }
 }
 </script>
